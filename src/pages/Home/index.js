@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <Container>
       <h1>Buttons</h1>
-      <ButtonGroup />
+      <ButtonGroup
+        color1={({ theme }) => theme.colors.gray[100]}
+        color2={({ theme }) => theme.colors.gray[500]}
+      />
     </Container>
   );
 }
