@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: 330px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 45px;
 
   span{
     font-family: 'Ubuntu Mono', monospace;
@@ -15,7 +16,6 @@ export const Container = styled.div`
 
     .typeButton{
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
 

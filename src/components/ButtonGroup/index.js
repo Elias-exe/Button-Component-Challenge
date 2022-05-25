@@ -1,19 +1,32 @@
 import PropTypes from 'prop-types';
 import Button from '../Button';
+import HoverButton from '../HoverButton';
 import { Container } from './styles';
 
-export default function ButtonGroup({ color1, color2 }) {
+export default function ButtonGroup({
+  title, color, textColor, hoverColor, hasBorder, hasShadow,
+}) {
   return (
     <Container>
-
       <div className="typeButton">
-        <span> Button </span>
-        <Button color1={color1}>Default</Button>
+        <span>{title}</span>
+        <Button
+          color={color}
+          textColor={textColor}
+          hoverColor={hoverColor}
+          hasBorder={hasBorder}
+          hasShadow={hasShadow}
+        />
       </div>
 
       <div className="descButton">
         <span> &:hover, &:focus </span>
-        <Button color2={color2}>Default</Button>
+        <HoverButton
+          hoverColor={hoverColor}
+          textColor={textColor}
+          hasBorder={hasBorder}
+          hasShadow={hasShadow}
+        />
       </div>
 
     </Container>
@@ -21,11 +34,17 @@ export default function ButtonGroup({ color1, color2 }) {
 }
 
 ButtonGroup.propTypes = {
-  color1: PropTypes.func,
-  color2: PropTypes.func,
+  color: PropTypes.func.isRequired,
+  title: PropTypes.string,
+  textColor: PropTypes.func.isRequired,
+  hoverColor: PropTypes.func,
+  hasBorder: PropTypes.bool,
+  hasShadow: PropTypes.bool,
 };
 
 ButtonGroup.defaultProps = {
-  color1: ({ theme }) => theme.colors.gray[100],
-  color2: ({ theme }) => theme.colors.gray[100],
+  title: null,
+  hoverColor: null,
+  hasBorder: false,
+  hasShadow: false,
 };
