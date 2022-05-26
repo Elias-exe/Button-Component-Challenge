@@ -71,6 +71,80 @@ export default function Home() {
         />
       </ButtonLine>
 
+      <ButtonLine>
+        <Button
+          title="<Button startIcon=”local_grocery_store” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+          startIcon
+        />
+
+        <Button
+          title="<Button endIcon=”local_grocery_store” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+          endIcon
+        />
+      </ButtonLine>
+
+      <ButtonLine>
+        <Button
+          title="<Button size=”sm” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+          size="sm"
+        />
+
+        <Button
+          title="<Button size=”md” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+          size="md"
+        />
+
+        <Button
+          title="<Button size=”lg” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+          size="lg"
+        />
+      </ButtonLine>
+
+      <ButtonLine width={800}>
+        <Button
+          title="<Button color=”default” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+        />
+
+        <Button
+          title="<Button color=”primary” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+        />
+
+        <Button
+          title="<Button color=”secondary” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+        />
+
+        <Button
+          title="<Button color=”danger” />"
+          color={({ theme }) => theme.colors.blue.primary}
+          textColor={({ theme }) => theme.colors.white.white}
+          hoverColor={({ theme }) => theme.colors.blue.primary}
+        />
+      </ButtonLine>
+
     </Container>
   );
 }

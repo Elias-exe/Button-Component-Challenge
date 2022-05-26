@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-display: flex;
+display: block;
 flex-direction: column;
 
-  
     span{
     font-family: 'Ubuntu Mono', monospace;
     color: ${({ theme }) => theme.colors.gray[400]};
@@ -15,8 +14,14 @@ flex-direction: column;
 `;
 
 export const ButtonStyle = styled.button`
-  width: 81px;
-  height: 36px;
+  margin-top: 5px;
+  padding: ${({ size }) => (size === 'sm' && ('6px'))
+   || (size === 'lg' && ('11px'))
+   || (size === 'md' && ('8px'))};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
   background-color: ${({ color }) => color};
   box-shadow: ${({ hasShadow }) => (hasShadow ? '0px 2px 3px rgba(51, 51, 51, 0.2);' : 'none')};
   border-radius: 6px;
@@ -33,6 +38,5 @@ export const ButtonStyle = styled.button`
     background-color: ${({ theme }) => theme.colors.gray[100]};
     color: #9E9E9E;
   }
-
   
 `;
