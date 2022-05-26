@@ -14,7 +14,7 @@ export const Container = styled.div`
     margin-bottom: 12px;
   }
 
-    .typeButton{
+  .typeButton{
     display: flex;
     flex-direction: column;
   }

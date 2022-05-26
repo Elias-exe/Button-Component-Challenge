@@ -1,5 +1,18 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span{
+    font-family: 'Ubuntu Mono', monospace;
+    color: ${({ theme }) => theme.colors.gray[500]};
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+`;
+
 export const HoverStyle = styled.button`
   width: 81px;
   height: 36px;
@@ -8,4 +21,11 @@ export const HoverStyle = styled.button`
   border-radius: 6px;
   border: ${({ hasBorder, theme }) => (hasBorder ? `1px solid ${theme.colors.blue.primary}` : 'none')};
   color: ${({ textColor }) => textColor};
+  cursor: default;
+
+  &[disabled]{
+    background-color: transparent;
+    color: #9E9E9E;
+    cursor: default;
+  }
 `;
