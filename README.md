@@ -37,9 +37,7 @@
 
 ## Overview
 
-![Image](https://prnt.sc/e8MhFHRcAkOe)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
 R:The project was uploaded at: https://button-component-8ef0d.web.app
