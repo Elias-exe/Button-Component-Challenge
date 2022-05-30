@@ -3,7 +3,17 @@ import { FaRocket } from 'react-icons/fa';
 import { ButtonStyle, Container } from './styles';
 
 export default function Button({
-  color, textColor, hoverColor, hasBorder, hasShadow, disabled, startIcon, endIcon, title, size,
+  color,
+  textColor,
+  hoverColor,
+  hasBorder,
+  hasShadow,
+  disabled,
+  startIcon,
+  endIcon,
+  title,
+  size,
+  buttonText,
 }) {
   return (
     <Container>
@@ -20,7 +30,7 @@ export default function Button({
         {startIcon && (
         <FaRocket />
         )}
-        Default
+        {buttonText}
         {endIcon && (
         <FaRocket />
         )}
@@ -40,6 +50,7 @@ Button.propTypes = {
   startIcon: PropTypes.bool,
   endIcon: PropTypes.bool,
   size: PropTypes.string,
+  buttonText: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -53,4 +64,5 @@ Button.defaultProps = {
   startIcon: false,
   endIcon: false,
   size: 'md',
+  buttonText: 'Default',
 };

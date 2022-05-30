@@ -14,6 +14,8 @@ export default {
     blue: {
       primary: '#3D5AFE',
       secondary: 'rgba(41, 98, 255, 0.1);',
+      terciary: '#455A64;',
+      quaternary: '#1C313A;',
     },
   },
 };

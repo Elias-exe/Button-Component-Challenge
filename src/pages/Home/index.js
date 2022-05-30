@@ -118,30 +118,33 @@ export default function Home() {
       <ButtonLine width={800}>
         <Button
           title="<Button color=”default” />"
-          color={({ theme }) => theme.colors.blue.primary}
-          textColor={({ theme }) => theme.colors.white.white}
-          hoverColor={({ theme }) => theme.colors.blue.primary}
+          hasShadow
+          color={({ theme }) => theme.colors.gray[100]}
+          textColor={({ theme }) => theme.colors.gray[600]}
+          hoverColor={({ theme }) => theme.colors.gray[200]}
         />
 
         <Button
           title="<Button color=”primary” />"
           color={({ theme }) => theme.colors.blue.primary}
           textColor={({ theme }) => theme.colors.white.white}
-          hoverColor={({ theme }) => theme.colors.blue.primary}
+          hoverColor="#0039CB"
         />
 
         <Button
           title="<Button color=”secondary” />"
-          color={({ theme }) => theme.colors.blue.primary}
+          color={({ theme }) => theme.colors.blue.terciary}
+          buttonText="Secondary"
           textColor={({ theme }) => theme.colors.white.white}
-          hoverColor={({ theme }) => theme.colors.blue.primary}
+          hoverColor={({ theme }) => theme.colors.blue.quaternary}
         />
 
         <Button
           title="<Button color=”danger” />"
-          color={({ theme }) => theme.colors.blue.primary}
+          color="#D32F2F;"
+          buttonText="Danger"
           textColor={({ theme }) => theme.colors.white.white}
-          hoverColor={({ theme }) => theme.colors.blue.primary}
+          hoverColor="#9A0007;"
         />
       </ButtonLine>
 
