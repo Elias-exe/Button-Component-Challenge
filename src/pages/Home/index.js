@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import ButtonLine from '../../components/ButtonLine';
+import ButtonGroup from '../../components/ButtonGroup';
 import Button from '../../components/Button';
 import HoverButton from '../../components/HoverButton';
 
@@ -8,7 +8,7 @@ export default function Home() {
     <Container>
       <h1>Buttons</h1>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button />"
           hasShadow
@@ -20,9 +20,9 @@ export default function Home() {
           hoverColor={({ theme }) => theme.colors.gray[200]}
           textColor={({ theme }) => theme.colors.gray[600]}
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button variant=”outline” />"
           hasShadow
@@ -36,9 +36,9 @@ export default function Home() {
           hoverColor={({ theme }) => theme.colors.blue.secondary}
           textColor={({ theme }) => theme.colors.blue.primary}
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button variant=”text” />"
           color="transparent"
@@ -49,18 +49,18 @@ export default function Home() {
           hoverColor={({ theme }) => theme.colors.blue.secondary}
           textColor={({ theme }) => theme.colors.blue.primary}
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button disableShadow />"
           color={({ theme }) => theme.colors.blue.primary}
           textColor={({ theme }) => theme.colors.white.white}
           hoverColor={({ theme }) => theme.colors.blue.primary}
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button disable/>"
           disabled
@@ -69,9 +69,9 @@ export default function Home() {
           title="<Button variant=”text” disabled />"
           disabled
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button startIcon=”local_grocery_store” />"
           color={({ theme }) => theme.colors.blue.primary}
@@ -87,9 +87,9 @@ export default function Home() {
           hoverColor={({ theme }) => theme.colors.blue.primary}
           endIcon
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine>
+      <ButtonGroup>
         <Button
           title="<Button size=”sm” />"
           color={({ theme }) => theme.colors.blue.primary}
@@ -113,9 +113,9 @@ export default function Home() {
           hoverColor={({ theme }) => theme.colors.blue.primary}
           size="lg"
         />
-      </ButtonLine>
+      </ButtonGroup>
 
-      <ButtonLine width={800}>
+      <ButtonGroup width={800}>
         <Button
           title="<Button color=”default” />"
           hasShadow
@@ -146,7 +146,7 @@ export default function Home() {
           textColor={({ theme }) => theme.colors.white.white}
           hoverColor="#9A0007;"
         />
-      </ButtonLine>
+      </ButtonGroup>
 
     </Container>
   );
